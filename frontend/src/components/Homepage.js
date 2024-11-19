@@ -5,7 +5,9 @@ export default function Homepage() {
     <div>
       <div className="homePage px-2 py-3 border-b-2 border-gray-500">
         <h2 className="text-center">Url Shortner</h2>
-        
+        <section className="urlSection">
+          
+        </section>
       </div>
     </div>
   )
