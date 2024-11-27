@@ -10,7 +10,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "antd": "^5.22.1",
+    "antd": "^5.22.2",
     "express": "^4.21.1",
     "mongoose": "^8.8.0",
     "nanoid": "^5.0.8",
