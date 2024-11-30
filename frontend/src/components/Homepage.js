@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form } from "antd"
+import { Form, Input } from "antd"
 
 export default function Homepage() {
   return (
@@ -10,9 +10,14 @@ export default function Homepage() {
           <div className="form">
             <Form layout='vertical'>
               <Form.Item label="Long url">
-
+                <Input></Input>
               </Form.Item>
             </Form>
+          </div>
+
+          <div className="output">
+            <label htmlFor="short Url">Shortned Url</label>
+            <p></p>
           </div>
         </section>
       </div>
