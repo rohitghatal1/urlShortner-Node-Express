@@ -13,15 +13,6 @@ export default function Navbar() {
           <NavLink to="/urlshort">
             <li></li>
           </NavLink>
-          <NavLink>
-            <li></li>
-          </NavLink>
-          <NavLink>
-            <li></li>
-          </NavLink>
-          <NavLink>
-            <li></li>
-          </NavLink>
         </ul>
       </nav>
     </div>
