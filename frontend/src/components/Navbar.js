@@ -11,7 +11,7 @@ export default function Navbar() {
             <li>Home</li>
           </NavLink>
           <NavLink to="/urlshort">
-            <li></li>
+            <li>Url Shortner</li>
           </NavLink>
         </ul>
       </nav>

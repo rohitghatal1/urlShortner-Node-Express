@@ -17,7 +17,10 @@ export default function Homepage() {
 
           <div className="output">
             <label htmlFor="short Url">Shortned Url</label>
-            <p></p>
+            <p>The Long Url is</p>
+            <span>
+
+            </span>
           </div>
         </section>
       </div>
