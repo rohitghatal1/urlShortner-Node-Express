@@ -9,6 +9,7 @@ export default function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Homepage />} />
+        <Route path='/urlshortner' element='#' />
       </Routes>
     </div>
   )
