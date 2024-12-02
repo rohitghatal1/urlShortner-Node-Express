@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, Input } from "antd"
+import { Button, Form, Input } from "antd"
 
 export default function Homepage() {
   return (
@@ -8,9 +8,14 @@ export default function Homepage() {
         <h2 className="text-center">Url Shortner</h2>
         <section className="urlSection">
           <div className="form">
-            <Form layout='vertical'>
+            <Form layout='vertical' onFinish={handleFormSubmission}>
               <Form.Item label="Long url">
                 <Input></Input>
+              </Form.Item>
+              <Form.Item>
+                <Button type='primary' htmlType='submit'>
+                  Send
+                </Button>
               </Form.Item>
             </Form>
           </div>
