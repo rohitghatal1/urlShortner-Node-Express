@@ -2,6 +2,9 @@ import React from 'react';
 import { Button, Form, Input } from "antd"
 
 export default function Homepage() {
+  const handleFormSubmission = (e) => {
+
+  }
   return (
     <div>
       <div className="homePage px-2 py-3 flex justify-center items-center">
