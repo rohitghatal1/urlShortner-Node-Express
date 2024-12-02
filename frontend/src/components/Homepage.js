@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Form, Input } from "antd"
 
+
 export default function Homepage() {
-  const handleFormSubmission = (e) => {
+  const [formData, setFormData] = useState("");
+
+  const handleFormSubmission = (values) => {
 
   }
   return (
@@ -12,8 +15,8 @@ export default function Homepage() {
         <section className="urlSection">
           <div className="form">
             <Form layout='vertical' onFinish={handleFormSubmission}>
-              <Form.Item label="Long url">
-                <Input></Input>
+              <Form.Item label="Long url" name="longUrl">
+                <Input />
               </Form.Item>
               <Form.Item>
                 <Button type='primary' htmlType='submit'>
@@ -26,9 +29,6 @@ export default function Homepage() {
           <div className="output">
             <label htmlFor="short Url">Shortned Url</label>
             <p>The Long Url is</p>
-            <span>
-
-            </span>
           </div>
         </section>
       </div>
