@@ -6,8 +6,9 @@ export default function Homepage() {
   const [formData, setFormData] = useState("");
 
   const handleFormSubmission = (values) => {
-
+    setFormData(values);
   }
+
   return (
     <div>
       <div className="homePage px-2 py-3 flex justify-center items-center">
