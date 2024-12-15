@@ -4,6 +4,7 @@ import { Button, Form, Input } from "antd"
 
 export default function Homepage() {
   const [formData, setFormData] = useState("");
+  const [shortUrl, setShortUrl] = useState();
 
   const handleFormSubmission = (values) => {
     setFormData(values);
@@ -29,7 +30,7 @@ export default function Homepage() {
 
           <div className="output">
             <label htmlFor="short Url">Shortned Url</label>
-            <p>The Long Url is</p>
+            <p>The shorted Url is: {shortUrl}</p>
           </div>
         </section>
       </div>
