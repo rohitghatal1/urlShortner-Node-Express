@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Form, Input } from "antd"
+import axios from 'axios';
 
 
 export default function Homepage() {
@@ -10,6 +11,14 @@ export default function Homepage() {
     setFormData(values);
   }
 
+  const getShortUrl = async () => {
+    const response = axios.get('');
+    setShortUrl(response?.data?.data);
+  }
+
+  useEffect(() => {
+    getShortUrl();
+  }, [])
   return (
     <div>
       <div className="homePage px-2 py-3 flex justify-center items-center">
