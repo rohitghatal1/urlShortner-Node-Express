@@ -6,8 +6,9 @@ import axios from 'axios';
 export default function Homepage() {
   const [formData, setFormData] = useState("");
   const [shortUrl, setShortUrl] = useState();
-
-  const handleFormSubmission = (values) => {
+  const [previousResults, setPreviousResults] = useState([]);
+  const handleFormSubmission = async (values) => {
+    await axios.post('urlShort', values);
     setFormData(values);
   }
 
@@ -15,6 +16,7 @@ export default function Homepage() {
     const response = axios.get('');
     setShortUrl(response?.data?.data);
   }
+
 
   useEffect(() => {
     getShortUrl();
