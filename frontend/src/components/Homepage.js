@@ -44,7 +44,9 @@ export default function Homepage() {
 
           <div className="output">
             <label htmlFor="short Url">Shortned Url</label>
-            <p>The shorted Url is: {shortUrl}</p>
+            <p className='flex items-center justify-between'>The shorted Url is: {shortUrl}
+              <Button onClick={deleteData}>Delete</Button>
+            </p>
           </div>
         </section>
       </div>
