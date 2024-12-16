@@ -17,6 +17,9 @@ export default function Homepage() {
     setShortUrl(response?.data?.data);
   }
 
+  const deleteData = async () => {
+    await axios.delete('', "Rohit")
+  }
 
   useEffect(() => {
     getShortUrl();
