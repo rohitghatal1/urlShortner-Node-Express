@@ -10,6 +10,12 @@ export default function About() {
                 <div className='text-gray-400 py-1 mt-4 flex items-center justify-around gap-3'>
                     <div className='border rounded-md p-3'>
                         <h3>Left side content</h3>
+                        <div className='mt-4 p-3'>
+                            <div className='border rounded-md p-2 bg-gray-100'>
+                                <img src="" alt="" />
+                                <p className='text-center text-lg'>Rohit Ghatal</p>
+                            </div>
+                        </div>
                     </div>
                     <div className='border rounded-md p-3'>
                         <h3>Right side content</h3>
