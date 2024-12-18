@@ -11,14 +11,22 @@ export default function About() {
                     <div className='border rounded-md p-3'>
                         <h3>Left side content</h3>
                         <div className='mt-4 p-3'>
-                            <div className='border rounded-md p-2 bg-gray-100'>
+                            <div className='border rounded-md p-2 bg-gray-100 w-60 flex items-center justify-center gap-3'>
                                 <img src="" alt="" />
-                                <p className='text-center text-lg'>Rohit Ghatal</p>
+                                <p className='text-center text-lg py-2'>Rohit Ghatal</p>
                             </div>
                         </div>
                     </div>
                     <div className='border rounded-md p-3'>
                         <h3>Right side content</h3>
+                        <div>
+                            <div className='mt-3'>
+                                <p className='text-sm text-gray-500'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore accusamus perferendis maiores
+                                    quos earum tempore aliquam excepturi fuga expedita dicta voluptatum, officiis consequuntur nostrum
+                                    blanditiis at eligendi aperiam odit obcaecati.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
