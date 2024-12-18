@@ -19,8 +19,8 @@ export default function About() {
                     </div>
                     <div className='border rounded-md p-3'>
                         <h3>Right side content</h3>
-                        <div>
-                            <div className='mt-3'>
+                        <div className='mt-4 p-4 border-gray-200 rounded-md'>
+                            <div className='p-3'>
                                 <p className='text-sm text-gray-500'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore accusamus perferendis maiores
                                     quos earum tempore aliquam excepturi fuga expedita dicta voluptatum, officiis consequuntur nostrum
                                     blanditiis at eligendi aperiam odit obcaecati.
