@@ -1,6 +1,19 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { Button, Form, Input } from "antd"
+import axios from 'axios';
 
-export default function urlShortnet() {
+
+
+export default function UrlShortnet() {
+    const [formData, setFormData] = useState("");
+    const [shortUrl, setShortUrl] = useState();
+    const handleFormSubmission = async (values) => {
+        await axios.post('urlShort', values);
+        setFormData(values);
+    }
+    const deleteData = async () => {
+        await axios.delete('', "Rohit")
+    }
     return (
         <div>
             <section className="urlSection">
