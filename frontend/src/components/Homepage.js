@@ -28,27 +28,6 @@ export default function Homepage() {
     <div>
       <div className="homePage px-2 py-3 flex justify-center items-center">
         <h2 className="text-center">Url Shortner</h2>
-        <section className="urlSection">
-          <div className="form">
-            <Form layout='vertical' onFinish={handleFormSubmission}>
-              <Form.Item label="Long url" name="longUrl">
-                <Input />
-              </Form.Item>
-              <Form.Item>
-                <Button type='primary' htmlType='submit'>
-                  Send
-                </Button>
-              </Form.Item>
-            </Form>
-          </div>
-
-          <div className="output">
-            <label htmlFor="short Url">Shortned Url</label>
-            <p className='flex items-center justify-between'>The shorted Url is: {shortUrl}
-              <Button onClick={deleteData}>Delete</Button>
-            </p>
-          </div>
-        </section>
       </div>
     </div>
   )
