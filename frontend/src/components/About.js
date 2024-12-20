@@ -14,9 +14,12 @@ export default function About() {
                             <div className='border rounded-md p-2 bg-gray-100 w-60 flex items-center justify-center gap-3'>
                                 <img src="" alt="" />
                                 <p className='text-center text-lg py-2'>Rohit Ghatal</p>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptatibus quasi quam molestiae
+                                    fugit nostrum nemo atque totam dolor voluptate.</p>
                             </div>
                         </div>
                     </div>
+
                     <div className='border rounded-md p-3'>
                         <h3>Right side content</h3>
                         <div className='mt-4 p-4 border-gray-200 rounded-md'>
