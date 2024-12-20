@@ -4,7 +4,7 @@ import axios from 'axios';
 
 
 
-export default function UrlShortnet() {
+export default function UrlShortner() {
     const [formData, setFormData] = useState("");
     const [shortUrl, setShortUrl] = useState();
     const handleFormSubmission = async (values) => {

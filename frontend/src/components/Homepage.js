@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import UrlShortnet from './urlShortnet';
+import UrlShortner from './UrlShortner';
 
 
 export default function Homepage() {
@@ -20,7 +20,7 @@ export default function Homepage() {
     <div>
       <div className="homePage px-2 py-3 flex justify-center items-center">
         <h2 className="text-center">Url Shortner</h2>
-        <UrlShortnet />
+        <UrlShortner />
       </div>
     </div>
   )
