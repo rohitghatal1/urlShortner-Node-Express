@@ -20,6 +20,9 @@ export default function Homepage() {
     <div>
       <div className="homePage px-2 py-3 flex justify-center items-center">
         <h2 className="text-center">Url Shortner</h2>
+        <div className='p-2'>
+          <p>Easy process for shorting the url and redirection</p>
+        </div>
         <UrlShortner />
       </div>
     </div>
