@@ -7,6 +7,8 @@ import { FaRegTrashAlt } from "react-icons/fa";
 export default function UrlShortner() {
     const [formData, setFormData] = useState("");
     const [shortUrl, setShortUrl] = useState();
+
+    // ---------------------form submission handlere ----------------------------- 
     const handleFormSubmission = async (values) => {
         await axios.post('urlShort', values);
         setFormData(values);
@@ -15,7 +17,7 @@ export default function UrlShortner() {
         await axios.delete('', "Rohit")
     }
     return (
-        <div>
+        <div className='p-2'>
             <section className="urlSection">
                 <div className="form">
                     <Form layout='vertical' onFinish={handleFormSubmission}>
