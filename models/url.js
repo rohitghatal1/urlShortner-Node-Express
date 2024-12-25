@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// shcema to store urls 
 const urlSchema = new mongoose.Schema({
     shortId: {
         type: String,
@@ -10,10 +11,12 @@ const urlSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    visitHistory: [{ timestamp: {type: Number}}]
+
+    // to store history of shorted url 
+    visitHistory: [{ timestamp: { type: Number } }]
 
 },
-    {timestamps: true}
+    { timestamps: true }
 );
 
 const URL = mongoose.model("url", urlSchema);

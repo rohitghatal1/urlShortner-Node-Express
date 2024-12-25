@@ -35,9 +35,11 @@ export default function UrlShortner() {
 
                 <div className="output">
                     <label htmlFor="short Url">Shortned Url</label>
-                    <p className='flex items-center justify-between'>The shorted Url is: {shortUrl}
-                        <Button onClick={deleteData} className='flex items-center gap-1'><FaRegTrashAlt color="red" />
-                            Delete</Button>
+                    <p className='flex items-center justify-between mt-2'>The shorted Url is: {shortUrl}
+                        <Button onClick={deleteData} className='flex items-center gap-1'>
+                            <FaRegTrashAlt color="red" />
+                            Delete
+                        </Button>
                     </p>
                 </div>
             </section>
