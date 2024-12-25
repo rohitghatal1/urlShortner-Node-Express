@@ -19,7 +19,7 @@ export default function UrlShortner() {
     return (
         <div className='p-2'>
             <section className="urlSection">
-                <div className="form">
+                <div className="form px-1 py-3 rounded-md broder">
                     <Form layout='vertical' onFinish={handleFormSubmission}>
                         <Form.Item label="Long url" name="longUrl">
                             <Input />
